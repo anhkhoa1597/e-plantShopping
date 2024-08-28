@@ -223,7 +223,7 @@ function ProductList() {
         padding: '15px',
         display: 'flex',
         justifyContent: 'space-between',
-        alignIems: 'center',
+        alignItems: 'center',
         fontSize: '20px',
     }
     const styleObjUl={
@@ -254,7 +254,7 @@ function ProductList() {
         dispatch(addItem(plant))
         setAddedToCart((prevState) => ({
             ...prevState,
-            [product.name]: true,
+            [plant.name]: true,
         }))
     }
     return (
@@ -262,7 +262,7 @@ function ProductList() {
             <div className="navbar" style={styleObj}>
             <div className="tag">
             <div className="luxury">
-            <img src="https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.png" alt="" />
+            <img src="https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.png" alt="Background Luxury" />
             <a href="/" style={{textDecoration:'none'}}>
                         <div>
                     <h3 style={{color:'white'}}>Paradise Nursery</h3>
